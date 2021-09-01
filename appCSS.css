@@ -1,0 +1,58 @@
+/*
+    Theme by Alek
+*/
+
+:root {
+  --text: #FFFFFF;
+  --accent: #ff8c00; /* CHANGE THIS to whatever your favorite color is */
+}
+
+/* Tree icons color*/
+span.fancytree-custom-icon {
+  color: var(--accent) !important;
+  background: none;
+}
+
+/* More indent between child and parent notes in tree */
+[role=group] {
+  padding-left: 20px !important;
+}
+
+/* Buttons */
+#global-buttons a:hover,
+button:hover,
+#note-title:hover {
+  color: var(--accent) !important;
+}
+.btn:not(.btn-primary) {
+    background-color: transparent !important;
+    border: none;
+}
+
+/* Code (green on black) */
+.ck-content code {
+    background-color: hsla(0, 0%, 5%, 0.3) !important;
+    color: #00ff00 !important;
+}
+.ck-content pre {
+    background: hsla(0, 0%, 0%, 1) !important;
+}
+code {
+    color: #00ff00 !important;
+}
+
+/* Note title */
+.note-title-container input.note-title {
+    color: var(--text) !important;
+    border-bottom: 1px solid var(--accent) !important;
+}
+
+/* Color of text of active tab */
+.note-tab-row .note-tab[active] .note-tab-title {
+    color: var(--accent) !important;
+}
+
+/* Fonts */
+.CodeMirror {
+    font-family: "Liberation Mono", "Lucida Console", monospace !important ;
+}
